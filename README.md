@@ -7,3 +7,8 @@ Example usage:
 For example, I am running on instance 15. I have a folder called 'configs' with 'LOND.txt' inside. I need to look up the router ip used in goto.sh. But I think we can make it more automatic for students. So I run:
 
 `./restore_configs.sh configs/ 158.15.10.1/16 LOND vtysh`
+
+## Restore all routers at once:
+`yes | ./restore_all.sh <directory-with-configs> <ASN>`
+
+Note: restore_all.sh does not have any error checking (for now), so be careful!
